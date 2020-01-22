@@ -39,16 +39,21 @@
             this.UpDownNmin = new System.Windows.Forms.NumericUpDown();
             this.UpDownN = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.UpDownMin = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownNmin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UpDownMin)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.UpDownMin);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -58,28 +63,29 @@
             this.panel1.Controls.Add(this.UpDownK);
             this.panel1.Controls.Add(this.UpDownNmin);
             this.panel1.Controls.Add(this.UpDownN);
-            this.panel1.Location = new System.Drawing.Point(96, 106);
+            this.panel1.Location = new System.Drawing.Point(163, 169);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(228, 159);
+            this.panel1.Size = new System.Drawing.Size(234, 225);
             this.panel1.TabIndex = 0;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(18, 97);
+            this.label5.ForeColor = System.Drawing.Color.DimGray;
+            this.label5.Location = new System.Drawing.Point(28, 89);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(128, 19);
             this.label5.TabIndex = 8;
             this.label5.Text = "если N mod K = 0";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(3, 78);
+            this.label4.ForeColor = System.Drawing.Color.DimGray;
+            this.label4.Location = new System.Drawing.Point(10, 70);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(146, 19);
             this.label4.TabIndex = 7;
@@ -89,18 +95,19 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(32, 46);
+            this.label3.ForeColor = System.Drawing.Color.DimGray;
+            this.label3.Location = new System.Drawing.Point(34, 46);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 19);
             this.label3.TabIndex = 6;
             this.label3.Text = "1) Вычесть из N:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Location = new System.Drawing.Point(86, 15);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 19);
@@ -113,7 +120,7 @@
             this.button1.BackColor = System.Drawing.Color.DarkGray;
             this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(7, 119);
+            this.button1.Location = new System.Drawing.Point(7, 170);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(152, 31);
             this.button1.TabIndex = 4;
@@ -126,7 +133,7 @@
             this.LabelOutPut.AutoSize = true;
             this.LabelOutPut.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelOutPut.ForeColor = System.Drawing.Color.Black;
-            this.LabelOutPut.Location = new System.Drawing.Point(165, 125);
+            this.LabelOutPut.Location = new System.Drawing.Point(179, 176);
             this.LabelOutPut.Name = "LabelOutPut";
             this.LabelOutPut.Size = new System.Drawing.Size(17, 19);
             this.LabelOutPut.TabIndex = 3;
@@ -151,6 +158,7 @@
             0,
             0,
             0});
+            this.UpDownK.ValueChanged += new System.EventHandler(this.UpDownK_ValueChanged);
             // 
             // UpDownNmin
             // 
@@ -176,6 +184,7 @@
             0,
             0,
             0});
+            this.UpDownNmin.ValueChanged += new System.EventHandler(this.UpDownNmin_ValueChanged);
             // 
             // UpDownN
             // 
@@ -204,6 +213,33 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Наименьшее число шагов";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.DimGray;
+            this.label6.Location = new System.Drawing.Point(36, 116);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(120, 19);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Число шагов до";
+            // 
+            // UpDownMin
+            // 
+            this.UpDownMin.BackColor = System.Drawing.Color.DarkGray;
+            this.UpDownMin.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpDownMin.ForeColor = System.Drawing.Color.Black;
+            this.UpDownMin.Location = new System.Drawing.Point(164, 114);
+            this.UpDownMin.Name = "UpDownMin";
+            this.UpDownMin.Size = new System.Drawing.Size(57, 27);
+            this.UpDownMin.TabIndex = 9;
+            this.UpDownMin.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.UpDownMin.ValueChanged += new System.EventHandler(this.UpDownMin_ValueChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,7 +247,7 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImage = global::PrakticheskayaRabota3.Properties.Resources._5b9e4aafc9278731da6c4f92;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(384, 361);
+            this.ClientSize = new System.Drawing.Size(534, 511);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
@@ -225,6 +261,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.UpDownK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownNmin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UpDownMin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,6 +280,8 @@
         private System.Windows.Forms.NumericUpDown UpDownN;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.NumericUpDown UpDownMin;
     }
 }
 
