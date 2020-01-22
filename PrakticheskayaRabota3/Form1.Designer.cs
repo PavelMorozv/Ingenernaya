@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.UpDownMin = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,19 +41,19 @@
             this.UpDownNmin = new System.Windows.Forms.NumericUpDown();
             this.UpDownN = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.UpDownMin = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UpDownMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownNmin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UpDownMin)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.UpDownMin);
             this.panel1.Controls.Add(this.label5);
@@ -67,6 +69,33 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(234, 225);
             this.panel1.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.DimGray;
+            this.label6.Location = new System.Drawing.Point(36, 116);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(120, 19);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Число шагов до";
+            // 
+            // UpDownMin
+            // 
+            this.UpDownMin.BackColor = System.Drawing.Color.DarkGray;
+            this.UpDownMin.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpDownMin.ForeColor = System.Drawing.Color.Black;
+            this.UpDownMin.Location = new System.Drawing.Point(164, 114);
+            this.UpDownMin.Name = "UpDownMin";
+            this.UpDownMin.Size = new System.Drawing.Size(57, 27);
+            this.UpDownMin.TabIndex = 9;
+            this.UpDownMin.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.UpDownMin.ValueChanged += new System.EventHandler(this.UpDownMin_ValueChanged);
             // 
             // label5
             // 
@@ -213,33 +242,6 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Наименьшее число шагов";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(36, 116);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(120, 19);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Число шагов до";
-            // 
-            // UpDownMin
-            // 
-            this.UpDownMin.BackColor = System.Drawing.Color.DarkGray;
-            this.UpDownMin.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpDownMin.ForeColor = System.Drawing.Color.Black;
-            this.UpDownMin.Location = new System.Drawing.Point(164, 114);
-            this.UpDownMin.Name = "UpDownMin";
-            this.UpDownMin.Size = new System.Drawing.Size(57, 27);
-            this.UpDownMin.TabIndex = 9;
-            this.UpDownMin.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.UpDownMin.ValueChanged += new System.EventHandler(this.UpDownMin_ValueChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,10 +260,10 @@
             this.ShowInTaskbar = false;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UpDownMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownNmin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UpDownMin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
