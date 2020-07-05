@@ -1,0 +1,10 @@
+digraph "UnitTest.UnitTest1.TestMinMove_N23_K1_R4_O0"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="UnitTest.UnitTest1.TestMin\lMove_N23_K1_R4_O0",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Тестовый метод отправляющий значения заранее вычисленного примера N - Число с которым происходят дейс..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PavelMorozov.PMath.MinMove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pavel_morozov_1_1_p_math.html#ac6a08a34780505fc171331a59b1f8a27",tooltip="Метод обределяющий минимальное количество дейтсвий для достижения цели"];
+}
