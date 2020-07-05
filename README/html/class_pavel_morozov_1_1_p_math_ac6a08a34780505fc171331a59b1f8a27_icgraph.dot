@@ -1,0 +1,30 @@
+digraph "PavelMorozov.PMath.MinMove"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="PavelMorozov.PMath.MinMove",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Метод обределяющий минимальное количество дейтсвий для достижения цели"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PrakticheskayaRabota3.Form1.button1\l_Click",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_prakticheskaya_rabota3_1_1_form1.html#aba55c1b796427169ecd1cf1ad9d87a42",tooltip="Событие на обработку кнопки \"Вычислить\" По нажатию на кнопу происходит выполнение функции \"MinMove\" и..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PrakticheskayaRabota3.Form1.\lInitializeComponent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_prakticheskaya_rabota3_1_1_form1.html#af55c7e1b1de0bc482b111a5afa341230",tooltip="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PrakticheskayaRabota3.Form1.\lForm1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_prakticheskaya_rabota3_1_1_form1.html#a8b4ebec669e0249f6f419582feda426e",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="UnitTest.UnitTest1.TestMin\lMove_N100_K1_R11_O9",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_unit_test_1_1_unit_test1.html#abeacfb63c14d9a52a8f4350b338a1502",tooltip="Тестовый метод отправляющий значения заранее вычисленного примера N - Число с которым происходят дейс..."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="UnitTest.UnitTest1.TestMin\lMove_N21_K1_R3_O0",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_unit_test_1_1_unit_test1.html#afbde32dffaf77f00a23f5f37531cd65a",tooltip="Тестовый метод отправляющий значения заранее вычисленного примера N - Число с которым происходят дейс..."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="UnitTest.UnitTest1.TestMin\lMove_N21_K1_R4_O4",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_unit_test_1_1_unit_test1.html#ad2089fc65ee770518d2620c9ab5314fc",tooltip="Тестовый метод отправляющий значения заранее вычисленного примера N - Число с которым происходят дейс..."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="UnitTest.UnitTest1.TestMin\lMove_N22_K1_R3_O0",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_unit_test_1_1_unit_test1.html#a6191126760f9902ecdcdd7d50010712e",tooltip="Тестовый метод отправляющий значения заранее вычисленного примера N - Число с которым происходят дейс..."];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="UnitTest.UnitTest1.TestMin\lMove_N22_K1_R4_O0",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_unit_test_1_1_unit_test1.html#a4fdf405558309a711262c907d2e81ac4",tooltip="Тестовый метод отправляющий значения заранее вычисленного примера N - Число с которым происходят дейс..."];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="UnitTest.UnitTest1.TestMin\lMove_N23_K1_R4_O0",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_unit_test_1_1_unit_test1.html#ac04bc050f5c2366b5895201d87961715",tooltip="Тестовый метод отправляющий значения заранее вычисленного примера N - Число с которым происходят дейс..."];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="UnitTest.UnitTest1.TestMin\lMove_N49_K1_R12_O3",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_unit_test_1_1_unit_test1.html#a9426d7b6ac6c789b39b06e205d24b279",tooltip="Тестовый метод отправляющий значения заранее вычисленного примера N - Число с которым происходят дейс..."];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="UnitTest.UnitTest1.TestMin\lMove_N85_K1_R7_O5",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_unit_test_1_1_unit_test1.html#a85bf666f4ffe4715f15b102eed19efa1",tooltip="Тестовый метод отправляющий значения заранее вычисленного примера N - Число с которым происходят дейс..."];
+}

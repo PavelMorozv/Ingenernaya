@@ -1,0 +1,11 @@
+digraph "PrakticheskayaRabota3.Form1"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{PrakticheskayaRabota3.Form1\n|- components\l- UpDownK\l- UpDownN\l- label6\l|+ Form1()\l# Dispose()\l- button1_Click()\l- UpDownMin_ValueChanged()\l- UpDownNmin_ValueChanged()\l- UpDownK_ValueChanged()\l- InitializeComponent()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{Form\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_form.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -UpDownNmin\n-label1\n-LabelOutPut\n-label2\n-panel1\n-UpDownMin\n-button1\n-label3\n-label4\n-label5\n..." ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{System\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

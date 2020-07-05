@@ -1,0 +1,10 @@
+digraph "PrakticheskayaRabota3.Form1.InitializeComponent"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="PrakticheskayaRabota3.Form1.\lInitializeComponent",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Требуемый метод для поддержки конструктора — не изменяйте содержимое этого метода с помощью редактора..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PrakticheskayaRabota3.Form1.\lForm1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_prakticheskaya_rabota3_1_1_form1.html#a8b4ebec669e0249f6f419582feda426e",tooltip=" "];
+}

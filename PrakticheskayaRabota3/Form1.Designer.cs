@@ -107,7 +107,6 @@
             this.label5.Size = new System.Drawing.Size(128, 19);
             this.label5.TabIndex = 8;
             this.label5.Text = "если N mod K = 0";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -130,7 +129,6 @@
             this.label3.Size = new System.Drawing.Size(122, 19);
             this.label3.TabIndex = 6;
             this.label3.Text = "1) Вычесть из N:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -142,7 +140,6 @@
             this.label2.Size = new System.Drawing.Size(70, 19);
             this.label2.TabIndex = 5;
             this.label2.Text = "Число N:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
